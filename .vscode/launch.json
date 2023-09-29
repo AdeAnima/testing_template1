@@ -1,0 +1,40 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Develop",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "args": [
+        "-d", "web-server",
+        "--web-hostname", "0.0.0.0",
+        "--web-port", "3000"
+      ]
+    },
+    {
+      "name": "Performance",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "args": [
+        "--profile",
+        "-d", "web-server",
+        "--web-hostname", "0.0.0.0",
+        "--web-port", "3001"
+      ]
+    },
+    {
+      "name": "Release",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "args": [
+        "--release",
+        "-d", "web-server",
+        "--web-hostname", "0.0.0.0",
+        "--web-port", "3002"
+      ]
+    }
+  ]
+}
